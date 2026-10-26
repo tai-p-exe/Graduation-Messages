@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卒業メッセージ</title>
+    <title>卒業メッセージ - 3年3組 30番</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             text-align: center;
             background-color: #f4f4f9;
             color: #333;
+            margin: 0;
             padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
             background: #fff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+        .header-section {
+            text-align: center;
         }
         img {
             max-width: 100%;
@@ -26,18 +31,17 @@
             border-radius: 8px;
             margin-bottom: 20px;
         }
-        p {
+        .main-message {
             font-size: 1.1rem;
             line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20px;
         }
-        /* ▼ 下にくっつけた盛り付けパーツ用のデザイン ▼ */
         .status-box {
-            margin-top: 25px;
+            margin: 25px 0;
             padding: 15px 20px;
             background: #f8f9fa;
             border-radius: 8px;
-            text-align: left;
-            font-size: 0.95rem;
             border-left: 4px solid #4a90e2;
         }
         .status-box p {
@@ -45,25 +49,118 @@
             font-size: 0.95rem;
             color: #555;
         }
+        
+        /* ▼ 偉人の名言セクションのスタイル ▼ */
+        .quotes-section {
+            margin-top: 40px;
+            border-top: 2px dashed #eaeaea;
+            padding-top: 30px;
+        }
+        .quotes-section h2 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .quote-card {
+            background: #fafbfc;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 15px 18px;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+        .quote-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .quote-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #24292e;
+            margin: 0 0 8px 0;
+            font-weight: bold;
+        }
+        .quote-author {
+            font-size: 0.85rem;
+            color: #586069;
+            text-align: right;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 幼少期の写真 -->
-        <img src="childhood.jpg" alt="幼少期の写真">
-        
-        <!-- メインメッセージ -->
-        <p>初期状態（t = 0）の自分です。</p>
-        <p>これからそれぞれのベクトルでしばらく**発散**するけれど、またいつか同じ座標に**収束**しような！</p>
+        <div class="header-section">
+            <!-- 幼少期の写真 -->
+            <img src="childhood.jpg" alt="幼少期の写真">
+            
+            <!-- メインメッセージ -->
+            <p class="main-message">初期状態（t = 0）の自分です。</p>
+            <p class="main-message">これからそれぞれのベクトルでしばらく<strong>発散</strong>するけれど、またいつか同じ座標に<strong>収束</strong>しような！</p>
+        </div>
 
-        <!-- ▼ ここから下が新しく追加した「盛り付け」パーツ ▼ -->
-        <hr style="margin: 25px 0; border: none; border-top: 1px solid #eaeaea;">
+        <!-- ステータスボックス -->
         <div class="status-box">
             <p>🎓 <strong>ID:</strong> 3年3組 30番</p>
             <p>📈 <strong>State:</strong> Diverging to future...</p>
             <p>💡 <strong>Message:</strong> よい青春を！またどこかで。</p>
         </div>
-        <!-- ▲ ここまで ▲ -->
+
+        <!-- ▼ 偉人の名言10選セクション ▼ -->
+        <div class="quotes-section">
+            <h2>✨ 科学者・偉人たちの名言集</h2>
+
+            <div class="quote-card">
+                <p class="quote-text">「もし私が見てきたものが人よりも遠くにあるならば、それは巨人たちの肩に乗っているからだ。」</p>
+                <p class="quote-author">― アイザック・ニュートン</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「大切なのは、疑問を持つことをやめないことだ。好奇心は、それ自体に存在理由がある。」</p>
+                <p class="quote-author">― アルベルト・アインシュタイン</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「自然という大いなる書物は、数学の言葉で書かれている。」</p>
+                <p class="quote-author">― ガリレオ・ガリレイ</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「自分で創り出せないものは、理解していないということだ。」</p>
+                <p class="quote-author">― リチャード・ファインマン</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「科学は事実から築かれる。家が石から築かれるように。しかし、事実の収集は科学ではない。」</p>
+                <p class="quote-author">― アンリ・ポアンカレ</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「正しい予測は、現在の知識の限界に挑む者だけがなし得る。」</p>
+                <p class="quote-author">― ニールス・ボーア</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「科学は単なる知識の体系ではない。それは思考の方法（ウェイ）なのだ。」</p>
+                <p class="quote-author">― カール・セーガン</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「我々に見えるのは、ほんの少しの未来だけだ。だが、それでもやるべきことはたくさんある。」</p>
+                <p class="quote-author">― アラン・チューリング</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「天災は忘れられた頃にやってくる。」</p>
+                <p class="quote-author">― 寺田寅彦</p>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">「目に見えるものだけを信じる者は、自分の目の限界を信じているにすぎない。」</p>
+                <p class="quote-author">― 湯川秀樹</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
