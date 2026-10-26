@@ -30,15 +30,40 @@
             font-size: 1.1rem;
             line-height: 1.6;
         }
+        /* ▼ 下にくっつけた盛り付けパーツ用のデザイン ▼ */
+        .status-box {
+            margin-top: 25px;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 0.95rem;
+            border-left: 4px solid #4a90e2;
+        }
+        .status-box p {
+            margin: 6px 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- 幼少期の写真 -->
         <img src="childhood.jpg" alt="幼少期の写真">
-        <!-- メッセージ -->
-        <p>🥺</p>
-        <p>これからそれぞれのベクトルでしばらく発散するけど、またいつか同じ座標に収束しような！</p>
+        
+        <!-- メインメッセージ -->
+        <p>初期状態（t = 0）の自分です。</p>
+        <p>これからそれぞれのベクトルでしばらく**発散**するけれど、またいつか同じ座標に**収束**しような！</p>
+
+        <!-- ▼ ここから下が新しく追加した「盛り付け」パーツ ▼ -->
+        <hr style="margin: 25px 0; border: none; border-top: 1px solid #eaeaea;">
+        <div class="status-box">
+            <p>🎓 <strong>ID:</strong> 3年3組 30番</p>
+            <p>📈 <strong>State:</strong> Diverging to future...</p>
+            <p>💡 <strong>Message:</strong> よい青春を！またどこかで。</p>
+        </div>
+        <!-- ▲ ここまで ▲ -->
     </div>
 </body>
 </html>
